@@ -1,4 +1,94 @@
 body {
-  background-color: black;
-  color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco para mejor contraste */
+}
+
+.menu-bar {
+    background-color: white; /* Fondo blanco */
+    padding: 10px 50px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    position: sticky; /* Fija la barra al hacer scroll */
+    top: 0; /* Posición en la parte superior */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    width: 100%; /* Abarca todo el ancho de la ventana */
+    margin: 20px 0 0 0; /* Elimina márgenes */
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-bar li {
+    margin-right: 20px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu-bar a:hover {
+    color: #007BFF;
+}
+
+.icon-bar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.icon {
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* INGRESO LOS ICONOS A LA PARTE INICIAL */
+.icon:hover {
+    color: #007BFF;
+}
+
+.icon-bar {
+    display: flex;
+    justify-content: flex-start; /* Alinea los íconos a la izquierda */
+    background-color: black; /* Fondo negro */
+    padding: 10px 20px;
+}
+
+.icon {
+    margin-right: 40px; /* Espacio entre los íconos */
+    color: white; /* Color blanco para los íconos */
+    font-size: 24px; /* Tamaño de los íconos */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.icon:hover {
+    color: #007BFF; /* Cambia el color al pasar el cursor */
+}
+
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px 0; /* Agrega un margen superior e inferior */
+    color: white; /* Asegura que el texto sea visible sobre el fondo negro */
+}
+
+.imagen-ejemplo {
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 20px auto; /* Centra la imagen horizontalmente y agrega margen superior e inferior */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: redondea las esquinas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: agrega sombra */
 }
