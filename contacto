@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Eclectic Store</title>
+    <link rel="stylesheet" href="style.css"> <!-- Reutiliza el CSS existente -->
+</head>
+<body>
+    <div class="icon-bar">
+        <a href="index.html" class="icon"><i class="fas fa-home"></i></a>
+        <a href="vestidos.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+        <a href="contacto.html" class="icon"><i class="fas fa-envelope"></i></a>
+    </div>
+    <h1>Contacto</h1>
+    <p>¡Contáctanos para más información o asistencia!</p>
+    <form class="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+        
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+<!-- Compare this snippet from shop5week.html: -->
+<!-- <!DOCTYPE html>
+ -->
