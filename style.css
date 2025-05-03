@@ -106,12 +106,12 @@ h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra para un diseño más atractivo */
   padding: 5px; /* Reduce el espacio interno */
   margin: 0; /* Elimina márgenes adicionales */
-}padding: 5px; /* Opcional: agrega espacio interno */
+  padding: 5px; /* Opcional: agrega espacio interno */
   border: 1px solid #ccc; /* Opcional: agrega un borde */
   border-radius: 8px; /* Opcional: redondea las esquinas */
 }
 .gallery-item img {
-    width: 150px; /* Ajusta el ancho deseado */
+    width: 70px; /* Ajusta el ancho deseado */
     height: 200px; /* Ajusta la altura deseada */
     object-fit: cover; /* Corta y ajusta la imagen para llenar el espacio sin deformarla */
     border-radius: 8px; /* Opcional: redondea las esquinas */
