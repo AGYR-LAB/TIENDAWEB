@@ -101,16 +101,16 @@ h1 {
 }
 
 .gallery-item {
-  width: 100px; /* Define un ancho fijo para los productos */
+  width: 150px; /* Define un ancho fijo para los productos */
   text-align: space-between; /* Centra el contenido dentro de cada producto */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra para un diseño más atractivo */
   padding: 3px; /* Reduce el espacio interno */
-  margin: 1; /* Elimina márgenes adicionales */
-  border: 1px solid #ccc; /* Opcional: agrega un borde */
+  margin: 10; /* Elimina márgenes adicionales */
+  border: 3px solid #ccc; /* Opcional: agrega un borde */
   border-radius: 8px; /* Opcional: redondea las esquinas */
 }
 .gallery-item img {
-    width: 100px; /* Ajusta el ancho deseado */
+    width: 150px; /* Ajusta el ancho deseado */
     height: 200px; /* Ajusta la altura deseada */
     object-fit: cover; /* Corta y ajusta la imagen para llenar el espacio sin deformarla */
     border-radius: 8px; /* Opcional: redondea las esquinas */
