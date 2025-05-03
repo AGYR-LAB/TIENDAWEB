@@ -93,10 +93,11 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: agrega sombra */
 }
 .gallery {
-  display: flex; /* Activa Flexbox */
-  gap: 20px; /* Espaciado entre los productos */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  flex-wrap: wrap; /* Permite que los productos bajen de línea si no hay suficiente espacio */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; /* Cambiar 'center' por 'space-between' */
+    flex-wrap: wrap;
+    align-items: flex-start; /* Alinea los elementos verticalmente */
 }
 
 .gallery-item {
