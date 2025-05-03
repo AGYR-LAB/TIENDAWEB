@@ -102,7 +102,7 @@ h1 {
 
 .gallery-item {
   width: 150px; /* Define un ancho fijo para los productos */
-  text-align: space-between; /* Centra el contenido dentro de cada producto */
+  text-align: space-evently; /* Centra el contenido dentro de cada producto */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra para un diseño más atractivo */
   padding: 3px; /* Reduce el espacio interno */
   margin: 10; /* Elimina márgenes adicionales */
