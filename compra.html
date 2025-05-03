@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="style.css"> <!-- Enlace opcional a tu CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a tu CSS -->
 </head>
 <body>
     <h1>Carrito de Compras</h1>
     <div id="carrito">
-        <p>Tu carrito está vacío.</p> <!-- Aquí se actualizarán los productos dinámicamente -->
+        <p>Tu carrito está vacío.</p> <!-- Aquí se mostrarán los productos dinámicamente -->
     </div>
     <script>
         // Recuperar los datos del carrito desde localStorage
@@ -18,7 +18,9 @@
         // Mostrar los productos en el carrito
         const carritoDiv = document.getElementById('carrito');
         if (carrito.length > 0) {
-            carritoDiv.innerHTML = '<ul>' + carrito.map(item => `<li>${item.nombre} - <img src="${item.imagen}" alt="${item.nombre}" width="50"></li>`).join('') + '</ul>';
+            carritoDiv.innerHTML = '<ul>' + carrito.map(item => 
+                `<li>${item.nombre} - <img src="${item.imagen}" alt="${item.nombre}" width="50"></li>`
+            ).join('') + '</ul>';
         } else {
             carritoDiv.innerHTML = '<p>Tu carrito está vacío.</p>';
         }
