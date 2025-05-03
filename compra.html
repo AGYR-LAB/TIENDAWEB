@@ -3,40 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra - Eclectic Store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace opcional a tu CSS -->
 </head>
 <body>
-    <div class="icon-bar">
-        <a href="index.html" class="icon"><i class="fas fa-home"></i></a>
-        <a href="vestidos.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
-        <a href="contacto.html" class="icon"><i class="fas fa-envelope"></i></a>
+    <h1>Carrito de Compras</h1>
+    <div id="carrito">
+        <p>Tu carrito está vacío.</p> <!-- Aquí se actualizarán los productos dinámicamente -->
     </div>
-    <h1>Resumen de Compra</h1>
-    <p>A continuación, revisa los productos seleccionados:</p>
-    
-    <!-- Lista de productos -->
-    <div class="productos">
-        <ul>
-            <li>Vestido 1 - $50</li>
-            <li>Vestido 2 - $60</li>
-            <li>Vestido 3 - $70</li>
-        </ul>
-    </div>
-
-    <!-- Resumen de precios -->
-    <div class="resumen">
-        <h2>Total: $180</h2>
-    </div>
-
-    <!-- Botón para confirmar compra -->
-    <button onclick="confirmarCompra()">Confirmar Compra</button>
-
     <script>
-        // Función para confirmar la compra
-        function confirmarCompra() {
-            alert("Compra confirmada. ¡Gracias por tu preferencia!");
-            // Aquí puedes agregar lógica adicional, como redirigir a otra página o procesar los datos.
+        // Recuperar los datos del carrito desde localStorage
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        // Mostrar los productos en el carrito
+        const carritoDiv = document.getElementById('carrito');
+        if (carrito.length > 0) {
+            carritoDiv.innerHTML = '<ul>' + carrito.map(item => `<li>${item.nombre} - <img src="${item.imagen}" alt="${item.nombre}" width="50"></li>`).join('') + '</ul>';
+        } else {
+            carritoDiv.innerHTML = '<p>Tu carrito está vacío.</p>';
         }
     </script>
 </body>
