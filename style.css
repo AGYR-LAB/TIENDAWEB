@@ -110,7 +110,7 @@ h1 {
   border-radius: 8px; /* Opcional: redondea las esquinas */
 }
 .gallery-item img {
-    width: 70px; /* Ajusta el ancho deseado */
+    width: 100px; /* Ajusta el ancho deseado */
     height: 200px; /* Ajusta la altura deseada */
     object-fit: cover; /* Corta y ajusta la imagen para llenar el espacio sin deformarla */
     border-radius: 8px; /* Opcional: redondea las esquinas */
