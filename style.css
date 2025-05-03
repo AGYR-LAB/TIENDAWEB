@@ -115,4 +115,5 @@ h1 {
     object-fit: cover; /* Corta y ajusta la imagen para llenar el espacio sin deformarla */
     border-radius: 8px; /* Opcional: redondea las esquinas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: agrega sombra */
+    margin: 10px;
 }
