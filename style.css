@@ -94,7 +94,7 @@ h1 {
 }
 .gallery {
     display: flex;
-    gap: 7px;
+    gap: 3px;
     justify-content: space-between; /* Cambiar 'center' por 'space-between' */
     flex-wrap: wrap;
     align-items: flex-start; /* Alinea los elementos verticalmente */
@@ -104,7 +104,9 @@ h1 {
   width: 200px; /* Define un ancho fijo para los productos */
   text-align: center; /* Centra el contenido dentro de cada producto */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: agrega sombra para un diseño más atractivo */
-  padding: 10px; /* Opcional: agrega espacio interno */
+  padding: 5px; /* Reduce el espacio interno */
+  margin: 0; /* Elimina márgenes adicionales */
+}padding: 5px; /* Opcional: agrega espacio interno */
   border: 1px solid #ccc; /* Opcional: agrega un borde */
   border-radius: 8px; /* Opcional: redondea las esquinas */
 }
