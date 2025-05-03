@@ -108,3 +108,10 @@ h1 {
   border: 1px solid #ccc; /* Opcional: agrega un borde */
   border-radius: 8px; /* Opcional: redondea las esquinas */
 }
+.gallery-item img {
+    width: 150px; /* Ajusta el ancho deseado */
+    height: 200px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Corta y ajusta la imagen para llenar el espacio sin deformarla */
+    border-radius: 8px; /* Opcional: redondea las esquinas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: agrega sombra */
+}
