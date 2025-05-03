@@ -94,7 +94,7 @@ h1 {
 }
 .gallery {
     display: flex;
-    gap: 0px;
+    gap: 1px;
     justify-content: center; /* Cambiar 'center' por 'space-between' */
     flex-wrap: wrap;
     align-items: flex-start; /* Alinea los elementos verticalmente */
