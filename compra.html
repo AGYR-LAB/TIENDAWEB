@@ -25,5 +25,13 @@
             carritoDiv.innerHTML = '<p>Tu carrito está vacío.</p>';
         }
     </script>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+<script>
+    function vaciarCarrito() {
+        localStorage.removeItem('carrito');
+        alert('Carrito vaciado.');
+        location.reload(); // Recargar la página para reflejar los cambios
+    }
+</script>
 </body>
 </html>
