@@ -95,15 +95,23 @@ h1 {
 .galeria-vestidos {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;                /* Espacio entre imágenes */
-  justify-content: center;  /* Centra las imágenes horizontalmente */
-  padding: 16px;            /* Espaciado interno opcional */
+  gap: 24px;                /* Más espacio entre imágenes */
+  justify-content: center;  /* Centra las imágenes */
+  padding: 24px 0;
+  background: #f9f9f9;      /* Fondo suave opcional */
+  border-radius: 16px;
 }
 
 .galeria-vestidos img {
-  width: 200px;             /* Ancho fijo para cada imagen */
-  height: 300px;            /* Alto fijo para cada imagen */
-  object-fit: cover;        /* Mantiene la proporción y recorta si es necesario */
-  border-radius: 8px;       /* Bordes redondeados opcionales */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra opcional */
+  width: 220px;             /* Tamaño uniforme */
+  height: 320px;
+  object-fit: cover;        /* Recorta las imágenes para que no se deformen */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15); /* Sombra para dar profundidad */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.galeria-vestidos img:hover {
+  transform: scale(1.04);   /* Efecto de zoom al pasar el mouse */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
